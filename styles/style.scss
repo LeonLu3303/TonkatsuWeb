@@ -5,6 +5,8 @@
   font-family: "Noto Sans TC", sans-serif;
 }
 header {
+  background-color: aliceblue;
+  height: 8vw;
   display: flex;
   align-items: center;
   div.logo {
@@ -37,4 +39,12 @@ header {
       }
     }
   }
+}
+main {
+  height: 46vh;
+  background-color: aqua;
+}
+footer {
+  height: 4vh;
+  background-color: bisque;
 }

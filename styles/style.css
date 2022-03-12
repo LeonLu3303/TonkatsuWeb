@@ -7,6 +7,8 @@
 }
 
 header {
+  background-color: aliceblue;
+  height: 8vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -60,5 +62,15 @@ header nav ul li a img {
   padding: 0.2rem;
   width: 3vw;
   height: 3vw;
+}
+
+main {
+  height: 46vh;
+  background-color: aqua;
+}
+
+footer {
+  height: 4vh;
+  background-color: bisque;
 }
 /*# sourceMappingURL=style.css.map */
