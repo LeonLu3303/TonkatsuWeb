@@ -41,19 +41,19 @@ main {
   background-image: url(../sourse/background.svg);
   height: 75vh;
   display: flex;
-  justify-content: center;
   align-items: center;
   z-index: 0;
   div.left {
     margin: 0;
     padding: 0;
+    margin-left: 150px;
     display: flex;
     justify-content: center;
     align-items: center;
   }
   .sliders {
-    width: 600px;
-    height: 439px;
+    width: 50vw;
+    height: 60vh;
     border-radius: 10px;
     overflow: hidden;
   }
@@ -70,16 +70,16 @@ main {
     transition: 2s;
   }
   .slide img {
-    width: 600px;
-    height: 439px;
+    width: 50vw;
+    height: 60vh;
   }
 
   /*css for manual slide navigation*/
 
   .navigtion-manual {
     position: absolute;
-    width: 600px;
-    margin-top: -100px;
+    width: 50vw;
+    margin-top: 10vh;
     display: flex;
     justify-content: center;
   }
@@ -88,13 +88,13 @@ main {
     padding: 5px;
     border-radius: 10px;
     cursor: pointer;
-    transition: 1s;
+    transition: 0.5s;
   }
   .manual-btn:not(:last-child) {
     margin-right: 40px;
   }
   .manual-btn:hover {
-    background: whitesmoke;
+    background: none;
   }
 
   #radio1:checked ~ .first {
@@ -114,9 +114,9 @@ main {
   .navigation-auto {
     position: absolute;
     display: flex;
-    width: 600px;
+    width: 50vw;
     justify-content: center;
-    margin-top: 400px;
+    margin-top: 56.3vh;
   }
   .navigation-auto div {
     border: 2px solid whitesmoke;
@@ -141,6 +141,10 @@ main {
   }
 
   div.right {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+    margin-left: 50px;
     div {
       width: 400px;
       height: 400px;
