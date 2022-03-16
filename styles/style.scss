@@ -5,18 +5,13 @@
   font-family: "Noto Sans TC", sans-serif;
 }
 header {
-  background-color: aliceblue;
-  height: 8vw;
+  background-image: url(../sourse/navbackground.svg);
   display: flex;
   align-items: center;
   div.logo {
     display: flex;
     align-items: center;
     flex: 5 1 400px;
-    img {
-      width: 6vw;
-      height: 6vw;
-    }
   }
   nav {
     flex: 2 1 400px;
@@ -26,9 +21,9 @@ header {
       justify-content: space-around;
       li {
         a {
-          color: black;
+          color: rgba(255, 237, 71, 0.938);
           text-decoration: none;
-          font-size: 1.35rem;
+          font-size: 1.4rem;
           align-items: center;
           img {
             padding: 0.2rem;
@@ -41,10 +36,123 @@ header {
   }
 }
 main {
-  height: 46vh;
-  background-color: aqua;
+  margin: 0;
+  padding: 0;
+  background-image: url(../sourse/background.svg);
+  height: 75vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 0;
+  div.left {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .sliders {
+    width: 600px;
+    height: 439px;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  .slides {
+    width: 500%;
+    height: 500px;
+    display: flex;
+  }
+  .slides input {
+    display: none;
+  }
+  .slide {
+    width: 20%;
+    transition: 2s;
+  }
+  .slide img {
+    width: 600px;
+    height: 439px;
+  }
+
+  /*css for manual slide navigation*/
+
+  .navigtion-manual {
+    position: absolute;
+    width: 600px;
+    margin-top: -100px;
+    display: flex;
+    justify-content: center;
+  }
+  .manual-btn {
+    border: 2px solid rgb(255, 255, 255);
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+  }
+  .manual-btn:not(:last-child) {
+    margin-right: 40px;
+  }
+  .manual-btn:hover {
+    background: whitesmoke;
+  }
+
+  #radio1:checked ~ .first {
+    margin-left: 0;
+  }
+  #radio2:checked ~ .first {
+    margin-left: -20%;
+  }
+  #radio3:checked ~ .first {
+    margin-left: -40%;
+  }
+  #radio4:checked ~ .first {
+    margin-left: -60%;
+  }
+
+  /*css for automatic*/
+  .navigation-auto {
+    position: absolute;
+    display: flex;
+    width: 600px;
+    justify-content: center;
+    margin-top: 400px;
+  }
+  .navigation-auto div {
+    border: 2px solid whitesmoke;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 1s;
+  }
+  .navigation-auto div:not(:last-child) {
+    margin-right: 40px;
+  }
+  #radio1:checked ~ .navigation-auto .auto-btn1 {
+    background: whitesmoke;
+  }
+  #radio2:checked ~ .navigation-auto .auto-btn2 {
+    background: whitesmoke;
+  }
+  #radio3:checked ~ .navigation-auto .auto-btn3 {
+    background: whitesmoke;
+  }
+  #radio4:checked ~ .navigation-auto .auto-btn4 {
+    background: whitesmoke;
+  }
+
+  div.right {
+    div {
+      width: 400px;
+      height: 400px;
+      background-color: black;
+    }
+  }
 }
 footer {
-  height: 4vh;
-  background-color: bisque;
+  display: flex;
+  height: 10vh;
+  img {
+    width: 3vw;
+    height: 3vw;
+  }
 }
