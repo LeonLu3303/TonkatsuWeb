@@ -212,21 +212,35 @@ main div.right {
   margin-left: 50px;
 }
 
-main div.right div {
-  width: 400px;
-  height: 400px;
-  background-color: black;
-}
-
 footer {
+  background-image: url(../sourse/navbackground.svg);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   height: 10vh;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+footer div {
+  margin-left: 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 1rem;
+  color: whitesmoke;
 }
 
 footer img {
-  width: 3vw;
-  height: 3vw;
+  margin-left: 10px;
+  width: 2vw;
+  height: 2vw;
 }
 /*# sourceMappingURL=style.css.map */
