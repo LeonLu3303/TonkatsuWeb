@@ -46,7 +46,7 @@ header nav ul {
 header nav ul li a {
   color: rgba(255, 237, 71, 0.938);
   text-decoration: none;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -206,10 +206,70 @@ main #radio4:checked ~ .navigation-auto .auto-btn4 {
 
 main div.right {
   margin: 0;
-  padding: 0;
+  padding: 1rem;
   -webkit-box-sizing: 0;
           box-sizing: 0;
   margin-left: 50px;
+  width: 30vw;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main div.right table {
+  border-collapse: collapse;
+}
+
+main div.right table tr {
+  border-bottom: 2px solid gray;
+}
+
+main div.right table tr td.newstitle {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 2rem;
+  color: #d30000;
+}
+
+main div.right table tr td.newslink {
+  width: 20vw;
+  font-size: 1.2rem;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding-left: 10px;
+}
+
+main div.right table tr td.newslink a {
+  color: black;
+  text-decoration: none;
+}
+
+main div.right table tr td.newslink a:hover {
+  text-decoration: underline;
+}
+
+main div.right table tr td.date {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  font-size: 0.6rem;
+  padding-right: 20px;
+}
+
+main div.right div.googlemap {
+  margin-top: 10vh;
+}
+
+main div.right div.googlemap iframe {
+  width: 30vw;
+  height: 30vh;
+  border-radius: 10%;
 }
 
 footer {
@@ -236,6 +296,11 @@ footer div {
           justify-content: center;
   font-size: 1rem;
   color: whitesmoke;
+}
+
+footer img.logo {
+  width: 4vw;
+  height: 4vw;
 }
 
 footer img {
