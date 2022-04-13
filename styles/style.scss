@@ -234,3 +234,42 @@ footer {
     height: 2vw;
   }
 }
+
+@media screen and (max-width:800px) {
+  header{
+    nav{
+      ul{
+        li{
+          a{
+            writing-mode: vertical-lr;
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+  main{
+    display:flow-root;
+    .sliders{
+      width: 85vw;
+      height: 60vh;
+    }
+    .slide img {
+      width: 85vw;
+      height: 60vh;
+    }
+    div.right{
+      justify-content: center;
+      align-items: center;
+      width: 85vw;
+      display: flex;
+      div.news{
+        margin-top: -10vh;
+      }
+      div.googlemap{
+        margin-top: 0;
+        margin-left: 10vw;
+      }
+      }
+    }  
+}

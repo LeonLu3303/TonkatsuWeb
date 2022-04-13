@@ -351,4 +351,43 @@ footer img {
   width: 2vw;
   height: 2vw;
 }
+
+@media screen and (max-width: 800px) {
+  header nav ul li a {
+    -webkit-writing-mode: vertical-lr;
+        -ms-writing-mode: tb-lr;
+            writing-mode: vertical-lr;
+    text-align: center;
+  }
+  main {
+    display: flow-root;
+  }
+  main .sliders {
+    width: 85vw;
+    height: 60vh;
+  }
+  main .slide img {
+    width: 85vw;
+    height: 60vh;
+  }
+  main div.right {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 85vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  main div.right div.news {
+    margin-top: -10vh;
+  }
+  main div.right div.googlemap {
+    margin-top: 0;
+    margin-left: 10vw;
+  }
+}
 /*# sourceMappingURL=style.css.map */
