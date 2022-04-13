@@ -62,10 +62,12 @@ main {
   margin: 0;
   padding: 0;
   background-image: url(../sourse/background.svg);
-  height: 75vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -75,9 +77,8 @@ main {
 }
 
 main div.left {
-  margin: 0;
+  margin: 6vh;
   padding: 0;
-  margin-left: 150px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -270,6 +271,48 @@ main div.right div.googlemap iframe {
   width: 30vw;
   height: 30vh;
   border-radius: 10%;
+}
+
+main div.about {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+}
+
+main div.about img {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main div.menulist {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 footer {
